@@ -53,14 +53,14 @@
 -(void)setupKVO{
     
     //alta en notificaciones para las propiedades que quiero observar
-    
+    //nuevo al refactrizar, nos nos hace falta las dos opciones. NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
     
     for (NSString* key  in [self observableKeys]){
         
         
         [self addObserver:self
                forKeyPath:key
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                  options:0
                   context:NULL];
         
     }
