@@ -24,9 +24,18 @@
     self.title=@"Everpobre";
     
     //añadimos botón de nueva libreta
-    UIBarButtonItem * addBtn=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNoteBook:)];
+    UIBarButtonItem * addBtn=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                          target:self
+                                                                          action:@selector(addNoteBook:)];
     self.navigationItem.rightBarButtonItem=addBtn;
     
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //registro la definicion de la celda que voy a utilizar
+    UINib *libretaNib = [UINib nibWithNibName:nil bundle:nil];
+    [self.tableView registerNib:libretaNib forCellReuseIdentifier:[RPLTableViewCell cellId]];
+    self.tableView.rowHeight=[RPLTableViewCell cellHeight];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,11 +43,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell*)tableView:(UITableView *)tableView
+       cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 
     RPLNotebook *nb=[self.fetchedResultsController objectAtIndexPath:indexPath];
-    static NSString *cellId=@"Cell";
 
     
 //averiguar de que libreta me hablan
@@ -57,7 +66,7 @@
     fmt.dateStyle=NSDateFormatterShortStyle;
     cell.detailTextLabel.text=[NSString stringWithFormat:@"%@(%lu notes)",[fmt stringFromDate:nb.modificationDate],(unsigned long)nb.notes.count];
     */
-        RPLTableViewCell *personaCell=[tableView dequeueReusableCellWithIdentifier:cellId                                                          forIndexPath:indexPath];
+        RPLTableViewCell *personaCell=[tableView dequeueReusableCellWithIdentifier:[RPLTableViewCell cellId]                                                        forIndexPath:indexPath];
         
     
    
@@ -69,7 +78,9 @@
 
 }
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //Averiguar quien se quiere eliminar
     if (editingStyle==UITableViewCellEditingStyleDelete) {

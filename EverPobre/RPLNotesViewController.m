@@ -28,7 +28,8 @@
     self.title=self.notebook.name;
     
 }
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell*)tableView:(UITableView *)tableView
+       cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     //Averiguar la nota
     RPLNote *note=[self.fetchedResultsController objectAtIndexPath:indexPath];
