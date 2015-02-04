@@ -2,7 +2,6 @@
 // Make changes to RPLNote.h instead.
 
 @import CoreData;
-#import "RPLEverPobreBasicClass.h"
 
 extern const struct RPLNoteAttributes {
 	__unsafe_unretained NSString *creationDate;
@@ -12,7 +11,7 @@ extern const struct RPLNoteAttributes {
 } RPLNoteAttributes;
 
 extern const struct RPLNoteRelationships {
-	__unsafe_unretained NSString *noteBook;
+	__unsafe_unretained NSString *notebook;
 	__unsafe_unretained NSString *photo;
 } RPLNoteRelationships;
 
@@ -22,7 +21,7 @@ extern const struct RPLNoteRelationships {
 @interface RPLNoteID : NSManagedObjectID {}
 @end
 
-@interface _RPLNote : RPLEverPobreBasicClass {}
+@interface _RPLNote : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
@@ -44,9 +43,9 @@ extern const struct RPLNoteRelationships {
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) RPLNotebook *noteBook;
+@property (nonatomic, strong) RPLNotebook *notebook;
 
-//- (BOOL)validateNoteBook:(id*)value_ error:(NSError**)error_;
+//- (BOOL)validateNotebook:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) RPLPhotoData *photo;
 
@@ -68,8 +67,8 @@ extern const struct RPLNoteRelationships {
 - (NSString*)primitiveText;
 - (void)setPrimitiveText:(NSString*)value;
 
-- (RPLNotebook*)primitiveNoteBook;
-- (void)setPrimitiveNoteBook:(RPLNotebook*)value;
+- (RPLNotebook*)primitiveNotebook;
+- (void)setPrimitiveNotebook:(RPLNotebook*)value;
 
 - (RPLPhotoData*)primitivePhoto;
 - (void)setPrimitivePhoto:(RPLPhotoData*)value;

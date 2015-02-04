@@ -2,7 +2,6 @@
 // Make changes to RPLNotebook.h instead.
 
 @import CoreData;
-#import "RPLEverPobreBasicClass.h"
 
 extern const struct RPLNotebookAttributes {
 	__unsafe_unretained NSString *creationDate;
@@ -19,7 +18,7 @@ extern const struct RPLNotebookRelationships {
 @interface RPLNotebookID : NSManagedObjectID {}
 @end
 
-@interface _RPLNotebook : RPLEverPobreBasicClass {}
+@interface _RPLNotebook : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

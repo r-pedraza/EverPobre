@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		573C13B21A80CBD1005104E1 /* RPLEverPobreBasicClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C13B11A80CBD1005104E1 /* RPLEverPobreBasicClass.m */; };
+		573C13B51A80D6B0005104E1 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C13B41A80D6B0005104E1 /* AGTCoreDataStack.m */; };
 		576C87371A7FB02E00422BB2 /* RPLPhotoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C87361A7FB02E00422BB2 /* RPLPhotoData.m */; };
+		5788D3171A8282E200A61D05 /* RPLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788D3151A8282E200A61D05 /* RPLTableViewCell.m */; };
+		5788D3181A8282E200A61D05 /* RPLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5788D3161A8282E200A61D05 /* RPLTableViewCell.xib */; };
+		578E84B01A82200E002D4033 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E84AF1A82200E002D4033 /* AGTCoreDataTableViewController.m */; };
+		578E84B51A82207D002D4033 /* RPLNoteBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E84B31A82207D002D4033 /* RPLNoteBooksViewController.m */; };
+		578E84B91A823E1B002D4033 /* UIViewController+RPLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E84B81A823E1B002D4033 /* UIViewController+RPLNavigation.m */; };
+		578E84BD1A824369002D4033 /* RPLNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E84BC1A824369002D4033 /* RPLNotesViewController.m */; };
 		57D672F11A7F916E001E3ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D672F01A7F916E001E3ECD /* main.m */; };
 		57D672F41A7F916E001E3ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D672F31A7F916E001E3ECD /* AppDelegate.m */; };
 		57D672F61A7F916E001E3ECD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D672F51A7F916E001E3ECD /* Images.xcassets */; };
@@ -35,7 +42,20 @@
 /* Begin PBXFileReference section */
 		573C13B01A80CBD1005104E1 /* RPLEverPobreBasicClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLEverPobreBasicClass.h; sourceTree = "<group>"; };
 		573C13B11A80CBD1005104E1 /* RPLEverPobreBasicClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLEverPobreBasicClass.m; sourceTree = "<group>"; };
+		573C13B31A80D6B0005104E1 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		573C13B41A80D6B0005104E1 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 		576C87361A7FB02E00422BB2 /* RPLPhotoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLPhotoData.m; sourceTree = "<group>"; };
+		5788D3141A8282E200A61D05 /* RPLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLTableViewCell.h; path = ../RPLTableViewCell.h; sourceTree = "<group>"; };
+		5788D3151A8282E200A61D05 /* RPLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLTableViewCell.m; path = ../RPLTableViewCell.m; sourceTree = "<group>"; };
+		5788D3161A8282E200A61D05 /* RPLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RPLTableViewCell.xib; path = ../RPLTableViewCell.xib; sourceTree = "<group>"; };
+		578E84AE1A82200E002D4033 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		578E84AF1A82200E002D4033 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		578E84B21A82207D002D4033 /* RPLNoteBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLNoteBooksViewController.h; sourceTree = "<group>"; };
+		578E84B31A82207D002D4033 /* RPLNoteBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLNoteBooksViewController.m; sourceTree = "<group>"; };
+		578E84B71A823E1B002D4033 /* UIViewController+RPLNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RPLNavigation.h"; sourceTree = "<group>"; };
+		578E84B81A823E1B002D4033 /* UIViewController+RPLNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RPLNavigation.m"; sourceTree = "<group>"; };
+		578E84BB1A824369002D4033 /* RPLNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLNotesViewController.h; sourceTree = "<group>"; };
+		578E84BC1A824369002D4033 /* RPLNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLNotesViewController.m; sourceTree = "<group>"; };
 		57D672EB1A7F916E001E3ECD /* EverPobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D672EF1A7F916E001E3ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D672F01A7F916E001E3ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +98,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		578E84B11A822018002D4033 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5788D3141A8282E200A61D05 /* RPLTableViewCell.h */,
+				5788D3151A8282E200A61D05 /* RPLTableViewCell.m */,
+				5788D3161A8282E200A61D05 /* RPLTableViewCell.xib */,
+				578E84AE1A82200E002D4033 /* AGTCoreDataTableViewController.h */,
+				578E84AF1A82200E002D4033 /* AGTCoreDataTableViewController.m */,
+				578E84B21A82207D002D4033 /* RPLNoteBooksViewController.h */,
+				578E84B31A82207D002D4033 /* RPLNoteBooksViewController.m */,
+				578E84BB1A824369002D4033 /* RPLNotesViewController.h */,
+				578E84BC1A824369002D4033 /* RPLNotesViewController.m */,
+				578E84BA1A823E25002D4033 /* Categorie */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		578E84BA1A823E25002D4033 /* Categorie */ = {
+			isa = PBXGroup;
+			children = (
+				578E84B71A823E1B002D4033 /* UIViewController+RPLNavigation.h */,
+				578E84B81A823E1B002D4033 /* UIViewController+RPLNavigation.m */,
+			);
+			name = Categorie;
+			sourceTree = "<group>";
+		};
 		57D672E21A7F916E001E3ECD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +145,7 @@
 		57D672ED1A7F916E001E3ECD /* EverPobre */ = {
 			isa = PBXGroup;
 			children = (
+				578E84B11A822018002D4033 /* Controllers */,
 				57D673111A7F95B4001E3ECD /* Models */,
 				57D672F21A7F916E001E3ECD /* AppDelegate.h */,
 				57D672F31A7F916E001E3ECD /* AppDelegate.m */,
@@ -138,7 +185,6 @@
 		57D673111A7F95B4001E3ECD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				57D6732B1A7FAC1C001E3ECD /* Machine */,
 				576C87361A7FB02E00422BB2 /* RPLPhotoData.m */,
 				573C13B01A80CBD1005104E1 /* RPLEverPobreBasicClass.h */,
 				573C13B11A80CBD1005104E1 /* RPLEverPobreBasicClass.m */,
@@ -147,6 +193,9 @@
 				57D673231A7FAB5E001E3ECD /* RPLNotebook.h */,
 				57D673241A7FAB5E001E3ECD /* RPLNotebook.m */,
 				57D673251A7FAB5E001E3ECD /* RPLPhotoData.h */,
+				573C13B31A80D6B0005104E1 /* AGTCoreDataStack.h */,
+				573C13B41A80D6B0005104E1 /* AGTCoreDataStack.m */,
+				57D6732B1A7FAC1C001E3ECD /* Machine */,
 				57D6730E1A7F9594001E3ECD /* Model.xcdatamodeld */,
 			);
 			name = Models;
@@ -248,6 +297,7 @@
 			files = (
 				57D672F91A7F916E001E3ECD /* LaunchScreen.xib in Resources */,
 				57D672F61A7F916E001E3ECD /* Images.xcassets in Resources */,
+				5788D3181A8282E200A61D05 /* RPLTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578E84BD1A824369002D4033 /* RPLNotesViewController.m in Sources */,
+				573C13B51A80D6B0005104E1 /* AGTCoreDataStack.m in Sources */,
 				57D673261A7FAB5E001E3ECD /* _RPLNote.m in Sources */,
+				578E84B01A82200E002D4033 /* AGTCoreDataTableViewController.m in Sources */,
+				578E84B51A82207D002D4033 /* RPLNoteBooksViewController.m in Sources */,
 				573C13B21A80CBD1005104E1 /* RPLEverPobreBasicClass.m in Sources */,
 				57D673291A7FAB5E001E3ECD /* RPLNote.m in Sources */,
 				57D673281A7FAB5E001E3ECD /* _RPLPhotoData.m in Sources */,
@@ -274,6 +328,8 @@
 				57D672F41A7F916E001E3ECD /* AppDelegate.m in Sources */,
 				57D672F11A7F916E001E3ECD /* main.m in Sources */,
 				57D673101A7F9594001E3ECD /* Model.xcdatamodeld in Sources */,
+				578E84B91A823E1B002D4033 /* UIViewController+RPLNavigation.m in Sources */,
+				5788D3171A8282E200A61D05 /* RPLTableViewCell.m in Sources */,
 				57D6732A1A7FAB5E001E3ECD /* RPLNotebook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

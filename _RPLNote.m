@@ -11,7 +11,7 @@ const struct RPLNoteAttributes RPLNoteAttributes = {
 };
 
 const struct RPLNoteRelationships RPLNoteRelationships = {
-	.noteBook = @"noteBook",
+	.notebook = @"notebook",
 	.photo = @"photo",
 };
 
@@ -52,7 +52,7 @@ const struct RPLNoteRelationships RPLNoteRelationships = {
 
 @dynamic text;
 
-@dynamic noteBook;
+@dynamic notebook;
 
 @dynamic photo;
 

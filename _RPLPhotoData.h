@@ -2,7 +2,6 @@
 // Make changes to RPLPhotoData.h instead.
 
 @import CoreData;
-#import "RPLEverPobreBasicClass.h"
 
 extern const struct RPLPhotoDataAttributes {
 	__unsafe_unretained NSString *photoData;
@@ -17,7 +16,7 @@ extern const struct RPLPhotoDataRelationships {
 @interface RPLPhotoDataID : NSManagedObjectID {}
 @end
 
-@interface _RPLPhotoData : RPLEverPobreBasicClass {}
+@interface _RPLPhotoData : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

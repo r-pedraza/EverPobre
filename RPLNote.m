@@ -19,7 +19,7 @@
 
     RPLNote *note=[self insertInManagedObjectContext:context];
     note.name=name;
-    note.noteBook=notebook;
+    note.notebook=notebook;
     note.creationDate=[NSDate date];
     note.photo=[RPLPhotoData insertInManagedObjectContext:context];
     note.modificationDate=[NSDate date];
@@ -37,7 +37,7 @@
     
     return @[RPLNoteAttributes.name,
              RPLNoteAttributes.text,
-             RPLNoteRelationships.noteBook,
+             RPLNoteRelationships.notebook,
              RPLNoteRelationships.photo,
              @"photo.photData"];
     
